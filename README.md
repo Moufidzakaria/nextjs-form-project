@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Form Project with MongoDB & Docker
 
-## Getting Started
+## Description
+Ce projet est une application Next.js avec un formulaire utilisateur complet. Les données sont envoyées à une API et stockées dans une base de données MongoDB. L’ensemble du projet est conteneurisé avec Docker et orchestré via Docker Compose. Il est également prêt pour l’intégration continue (CI) avec GitHub Actions.
 
-First, run the development server:
+---
 
+## Fonctionnalités principales
+- Formulaire utilisateur avec champs : Nom, Email, Mot de passe, Age et Extra
+- Validation côté client pour éviter les erreurs
+- Stockage sécurisé des données dans MongoDB
+- Conteneurisation Docker pour une installation rapide et reproductible
+- Pipeline CI avec GitHub Actions pour automatiser le build et le déploiement
+- Interface propre et responsive avec Tailwind CSS
+- Communication avec le backend via Axios
+
+---
+
+## Stack technique
+- **Frontend** : Next.js 15, React, Tailwind CSS
+- **Backend** : Node.js 20, Express (ou API intégrée Next.js)
+- **Base de données** : MongoDB 7
+- **Conteneurisation** : Docker, Docker Compose
+- **CI/CD** : GitHub Actions
+
+---
+
+## Architecture du projet
+- `frontend/` : Application Next.js
+- `backend/` (ou `pages/api/`) : Routes API pour gérer les utilisateurs
+- `docker-compose.yml` : Orchestration des conteneurs frontend et MongoDB
+- `.env` : Variables d'environnement pour la configuration de MongoDB et de l’application
+- `github/workflows/ci.yml` : Configuration de la pipeline CI
+
+---
+
+## Installation et lancement
+1. Cloner le dépôt
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/votre-utilisateur/votre-repo.git
+cd votre-repo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Projet full-stack prêt pour la production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Conteneurisé pour faciliter le déploiement sur n’importe quelle machine
 
-## Learn More
+CI/CD automatique pour tester et déployer le projet
 
-To learn more about Next.js, take a look at the following resources:
+Interface moderne et responsive
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Scalabilité et sécurité intégrées dès le départ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Zakaria Moufid – Développeur Full Stack Junior
