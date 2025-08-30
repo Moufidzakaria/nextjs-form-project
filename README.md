@@ -37,8 +37,7 @@ Ce projet est une application Next.js avec un formulaire utilisateur complet. Le
 ## Installation et lancement
 1. Cloner le dépôt
 ```bash
-git clone https://github.com/votre-utilisateur/votre-repo.git
-cd votre-repo
+
 
 
 Projet full-stack prêt pour la production
